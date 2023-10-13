@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+header{
+    width: 100vw;
+    height: 80%;
+    background-image: url('./imagens/Arvores-fundo-escuro.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0px -50px 50px #000;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+}
+
+h4{
+    margin: 20px 40px;
+    font-size: 30px;
+}
+
+ul{
+   display: flex; 
+}
+
+li{
+    margin: 20px 20px;
+}
+
+.meio{
+    height: 300px;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.meio h2{
+    margin-top: 180px;
+    color: rgb(255, 255, 255);
+}
+
+.meio h1{
+    color: rgb(43, 168, 74);
+    font-size: 5.5rem;
+}
+
+article{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.face{
+    font-size: 80px;
+    color: rgb(233, 102, 3);
+}
+
+.css{
+    font-size: 80px;
+    color: rgb(14, 3, 170);
+}
+
+.javascript{
+    font-size: 80px;
+    color: rgb(243, 219, 5);
+}
+
+@media(max-width:620px){
+
+    body{
+        overflow-x: hidden;
+        height: auto;
+    }
+
+    header{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        margin: 0;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    h4{
+        width: 100%;
+        order: 2;
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+    section nav{
+        width: 100%;
+        order: 1;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .meio{
+        width: 100%;
+        margin: 0;
+    }
+
+    .meio h2{
+        width: 100%;
+        margin: 0;
+    }
+
+    article{
+        height: 300px;
+        width: 100%;
+    }
+}

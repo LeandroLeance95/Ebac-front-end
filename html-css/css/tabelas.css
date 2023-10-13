@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+	font-family: 'PT Sans', sans-serif;
+}
+
+table, tr, td, th{
+    border: 2px solid #757575;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 20px;
+}
+
+
+tr:nth-child(even) {
+	background-color: rgb(110, 87, 240);
+}
+
+table tbody tr:hover {
+	background-color: #3d3d3d;
+	color: #EEEEEE;
+}
+
+table th,
+table td {
+	padding: 1rem;
+	text-align: right;
+	vertical-align: middle;
+}
+
+
+
+table th {
+	background-color: rgb(110, 87, 240);
+
+}
+
+.table-container {
+	padding: 10px 5px;
+}
+
+header{
+	padding: 5px;
+}
+
+article{
+	padding: 5px;
+}

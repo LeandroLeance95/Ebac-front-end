@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML - Layout</title>
+    </head>
+
+    <style>
+        * {
+         box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        /*create two columns that floats next to each other */
+        nav{
+            float: left;
+            width: 30%;
+
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /*style the list inside the menu*/
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+        }
+
+        /*clear floats after the columns*/
+        section::after {
+            background: #ccc;
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /*style the footer*/
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        /*responsive layout - makes the two columns/boxes stack on top of each instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav,article {
+                width: 100%;
+                height: auto;
+            }
+        } 
+    </style>
+    <body>
+        
+        <header>
+            <h1>Título da Página</h1>
+        </header>
+
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <h1>Qualquer Coisa</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore molestias consequuntur velit dolore cumque in vel architecto laudantium, ut suscipit corrupti officiis quas incidunt natus nihil nobis a dolores sapiente?
+                Debitis, in veritatis. Consequuntur repudiandae consequatur neque. Eveniet labore dolores quasi inventore quibusdam nemo, aliquid consectetur maxime quo cupiditate magnam laudantium mollitia quos eius, consequuntur maiores alias quae, libero quas.
+                Ipsam harum magni fugiat ad eius aliquam sed voluptate? Placeat, iure dicta? Commodi dignissimos impedit recusandae dolor dolores quisquam rem deserunt quidem laudantium, dolorum qui unde ratione, mollitia vel pariatur!</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam tempora magnam odio corporis quae fugit sit, et ad quidem earum dolor. Hic quaerat molestias ipsum consequatur nisi dolor aliquam tempore?
+                At consequatur nam, dolores itaque modi porro voluptates molestias soluta, repellendus beatae labore tenetur incidunt minus ipsum? Tempora nobis illo eius eligendi maiores error eum, nihil ipsam dicta molestiae consectetur.</p>
+            </article>
+
+        </section>
+        <footer>
+            <h2>Desenvolvido por mim kkkkkkkkkkk!!!!</h2>
+        </footer>
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
