@@ -50,6 +50,14 @@ São ramificações / versões paralelas
 - git merge main(faço manualmente o merge, e assumo toda responsabilidade de erros que forem adicionados a main)
 
 
+### Pull Request
+- Mescla de branchs no repositório
+
+- Permite o code review
+
+- O repositório resolve os conflitos automaticamente
+
+
 ### Git Flow
 - Utlizado para trabalhos em equipe, que no final fazem o Merge (a mescla ou unificação), de todos os códigos desenvolvidos pela equipe
 
