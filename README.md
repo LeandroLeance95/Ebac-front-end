@@ -43,5 +43,27 @@ São ramificações / versões paralelas
 
 - git checkout main (mudo de branchs, depois de checkout digito o nome da branch que desejo)
 
+
 ### Merge
 - Mescla de branchs
+
+- git merge main(faço manualmente o merge, e assumo toda responsabilidade de erros que forem adicionados a main)
+
+
+### Pull Request
+- Mescla de branchs no repositório
+
+- Permite o code review
+
+- O repositório resolve os conflitos automaticamente
+
+
+### Git Flow
+- Utlizado para trabalhos em equipe, que no final fazem o Merge (a mescla ou unificação), de todos os códigos desenvolvidos pela equipe
+
+- git flow init (para configurar todas as ramificações, como versões, atualizações, mudanças rápidas, correções de bugs e outras)
+
+- git flow feature start (depois do start digito o nome para feature, será criado uma feature, uma versão da brach atual, no caso estou na branch dev)
+
+-git flow feature finish (nome que foi dado a feature, esse comando é para quando estiver completo a atualização, ou melhoria feita dentro da feature, ao dar esse comando será adicionado as mudanças na branch dev, é como o Merge)
+
