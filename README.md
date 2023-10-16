@@ -35,8 +35,13 @@ São ramificações / versões paralelas
 - main / master (vai para a produção, quando o projeto é publicado)
 - develop (cópia da main, onde faço alterações na minha máquina local antes de publicar, testes, desenvolvimento, e commits)
 
-- git checkout -b dev (comando para criar a branch developer, que é a ramificação da main, ou uma cópia)
-
 - DOD = Definition of Done : critérios aceitos
 
 - versionamento 1.2.10 (primeiro digito é quando já esta publicado na main, onde o código já está rodando, segundo digito é alterações importantes que foram feitas, terceito digito é apenas correções de bugs, pequenas alterações)
+
+- git checkout -b dev (comando para criar uma branch, que é a ramificação (cópia da main), depois de -b coloco o nome que desejar, não precisa ser dev)
+
+- git checkout main (mudo de branchs, depois de checkout digito o nome da branch que desejo)
+
+### Merge
+- Mescla de branchs
