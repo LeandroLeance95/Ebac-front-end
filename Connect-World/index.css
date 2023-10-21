@@ -1,9 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 body{
@@ -34,7 +39,7 @@ header{
 }
 
 .nave-1{
-    width: 250px;
+    width: 260px;
     height: 100%;
 }
 
@@ -52,7 +57,7 @@ header{
 }
 
 .ul-2{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .botao-1, .botao-2{
@@ -69,7 +74,7 @@ header{
 }
 
 .botao-2{
-    width: 130px;
+    width: 140px;
 }
 
 .botao-3{
@@ -80,6 +85,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 15px;
+}
+
+.botao-1,.botao-2,.botao-3{
+    cursor: pointer;
 }
 
 a{
@@ -165,6 +175,44 @@ footer{
     justify-content: space-evenly;
 }
 
+@media (max-width:700px){
+    main{
+        flex-direction: column;
+    }
+
+    main h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    main article{
+        width: 95%;
+    }
+}
+
+@media (max-width: 560px){
+    header{
+        flex-direction: column;
+        height: 100px;
+    }
+
+    header h1{
+        font-size: 2.8rem;
+    }
+
+    .nave-1, .ul-1{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    section{
+        padding: 10px 20px 10px 20px;
+    }
+
+    main article{
+        width: 95%;
+    }
+}
 
 
 
